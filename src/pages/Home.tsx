@@ -30,9 +30,9 @@ const Home: React.FC = () => {
             {content.companyName}
           </h1>
           
-          <h2 className="font-sans text-xl md:text-2xl text-stone-600 font-light mb-12">
+          {/* <h2 className="font-sans text-xl md:text-2xl text-stone-600 font-light mb-12">
             {content.companyNameSecondary}
-          </h2>
+          </h2> */}
 
           <div className="flex flex-col sm:flex-row justify-center gap-6">
             <Link 

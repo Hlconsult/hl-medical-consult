@@ -45,7 +45,7 @@ interface Content {
 const SERVICES_EN: ServiceItem[] = [
   {
     title: "Global Registration of Medical Devices",
-    description: "Comprehensive regulatory affairs services for market access in key global jurisdictions.",
+    description: "Comprehensive regulatory affairs services for market access globally.",
     details: [
       "NMPA (China)",
       "FDA (USA)",
@@ -59,7 +59,8 @@ const SERVICES_EN: ServiceItem[] = [
   {
     title: "Translation Service",
     description: "Specialized medical and technical translation by experienced professionals.",
-    details: ["Languages: Chinese, English, Japanese", "Translator: Haley"],
+    // details: ["Main Languages: Chinese, English, Japanese", "Translator: Haley"],
+    details: ["Main Languages: Chinese, English, Japanese"],
     pricing: [
       { pair: "Mandarin-English / English-Mandarin", rate: "140 CNY / 1000 Words" },
       { pair: "Mandarin-Japanese / Japanese-Mandarin", rate: "200 CNY / 1000 Words" }
@@ -67,15 +68,20 @@ const SERVICES_EN: ServiceItem[] = [
   },
   {
     title: "Investor Recommendation",
-    description: "Strategic consulting focused on the medical device and pharmaceutical industry connection.",
-    details: ["Focused on Medical Device Industry", "Pharmaceutical Industry"]
+    description: "Strategic investor recommendation for medical device and pharmaceutical clients.",
+    details: ["Investors in China", "Global investors"]
+  },
+  {
+    title: "Custom-made Service",
+    description: "Custom-made service based on your business needs. Our expertise & connection in medical device & pharma industry will help you in many ways.",
+    details: ["CUSTOM"]
   }
 ];
 
 const SERVICES_CN: ServiceItem[] = [
   {
     title: "全球医疗器械注册",
-    description: "全方位的法规事务服务，助力进入全球主要市场。",
+    description: "全方位的法规事务服务，助力进入全球市场。",
     details: [
       "NMPA (中国)",
       "FDA (美国)",
@@ -89,7 +95,8 @@ const SERVICES_CN: ServiceItem[] = [
   {
     title: "翻译服务",
     description: "由经验丰富的专业人士提供的专业医疗和技术翻译。",
-    details: ["语言：中文、英文、日文", "译者：Haley"],
+    // details: ["主要语言：中文、英文、日文", "译者：Haley"],
+    details: ["主要语言：中文、英文、日文"],
     pricing: [
       { pair: "中英互译", rate: "140元 / 1000字" },
       { pair: "中日互译", rate: "200元 / 1000字" }
@@ -97,8 +104,13 @@ const SERVICES_CN: ServiceItem[] = [
   },
   {
     title: "投融资咨询",
-    description: "专注于医疗器械和制药行业的战略咨询。",
-    details: ["专注于医疗器械行业", "制药行业"]
+    description: "为医疗器械和制药行业的客户提供战略投资者推荐服务。",
+    details: ["中国投资者", "全球投资者"]
+  },
+  {
+    title: "定制服务",
+    description: "我们根据您的业务需求提供定制服务。我们在医疗器械和制药行业的专业知识和人脉资源将为您提供多方面的帮助。",
+    details: ["定制"]
   }
 ];
 
@@ -107,7 +119,7 @@ const TEAM_EN: TeamMember[] = [
     name: "Haley Li",
     role: "Founder",
     location: "Guangzhou, China",
-    bio: "Experienced CRO & Notified Body sales & professional translator (Mandarin, English & Japanese).",
+    bio: "Medical device CRO & Notified Body sales & Translator (Mandarin, English & Japanese).",
     isFounder: true,
     linkedin: "https://www.linkedin.com/in/hui-l-a9bb25104/"
   },
@@ -118,7 +130,7 @@ const TEAM_EN: TeamMember[] = [
     bio: "Expert in NMPA registration since 2008. Past experience includes GE, Edwards Lifesciences, ZEISS, and ZOLL Medical."
   },
   {
-    name: "Changbin",
+    name: "Klem",
     role: "Medical Device CE, FDA & QMS Manager",
     location: "Guangzhou, China",
     bio: "Specialist in NMPA, ISO 13485, MDSAP since 2012. Extensive experience with Chinese manufacturers & CROs."
@@ -136,11 +148,11 @@ const TEAM_EN: TeamMember[] = [
     bio: "Specializing in medical device & drug registration for Hong Kong, Taiwan & Australia since 2004. Past experience with Takeda & CROs."
   },
   {
-    name: "Weihao",
-    role: "IVD NMPA & CE Registration & QMS Specialist",
-    location: "Guangzhou, China",
-    bio: "Focus on IVD, NMPA, ISO 13485, and MDSAP. Past experience with MGI Tech and Wondfo."
-  }
+    name: "James",
+    role: "Head of U.S. Subsidiary",
+    location: "Indianapolis, IN, USA",
+    bio: "Leading U.S.-related businesses including U.S. & Europe clinical trials, FDA registration (U.S. Agent), and distributor recommendations. Expert in business development and clinical trial project management in pharma & medical devices since 2009. Work experience in both China and the U.S., with past roles at Roche, IQVIA, Covance, and a Chinese pharmaceutical company."
+  },
 ];
 
 const TEAM_CN: TeamMember[] = [
@@ -148,7 +160,7 @@ const TEAM_CN: TeamMember[] = [
     name: "Haley Li",
     role: "创始人",
     location: "中国广州",
-    bio: "资深CRO和公告机构销售及专业翻译（中英日）。",
+    bio: "医疗器械CRO和公告机构销售及翻译（中英日）。",
     isFounder: true,
     linkedin: "https://www.linkedin.com/in/hui-l-a9bb25104/"
   },
@@ -159,7 +171,7 @@ const TEAM_CN: TeamMember[] = [
     bio: "自2008年起专注于NMPA注册。曾就职于GE、Edwards Lifesciences、ZEISS和ZOLL Medical。"
   },
   {
-    name: "Changbin",
+    name: "Klem",
     role: "医疗器械CE、FDA及体系经理",
     location: "中国广州",
     bio: "自2012年起专注于NMPA、ISO 13485、MDSAP。拥有丰富的中国制造商和CRO经验。"
@@ -177,11 +189,11 @@ const TEAM_CN: TeamMember[] = [
     bio: "自2004年起专注于香港、台湾和澳大利亚的医疗器械及药品注册。曾就职于Takeda和CRO。"
   },
   {
-    name: "Weihao",
-    role: "IVD NMPA & CE 注册及体系专家",
-    location: "中国广州",
-    bio: "专注于IVD、NMPA、ISO 13485和MDSAP。曾就职于华大智造（MGI Tech）和万孚生物（Wondfo）。"
-  }
+    name: "James",
+    role: "美国子公司负责人",
+    location: "美国印第安纳波利斯",
+    bio: "负责美国相关业务，包括美国及欧洲的临床试验、FDA 注册（美国代理）、经销商推荐等。自 2009 年起深耕医药与医疗器械领域的商务拓展及临床试验项目管理。拥有中美两地工作经验，曾任职于罗氏（Roche）、IQVIA、Covance 及一家中国制药公司。"
+  },
 ];
 
 const CONTACT_INFO: ContactInfo = {
@@ -208,7 +220,7 @@ export const TRANSLATIONS: { en: Content; cn: Content } = {
     },
     servicesPage: {
       title: "Our Expertise",
-      subtitle: "Professional consulting bridging the gap between medical innovation and global markets.",
+      subtitle: "Professional consulting bridging the gap between your medical device and China market.",
       rateCardTitle: "Rate Card",
       items: SERVICES_EN
     },

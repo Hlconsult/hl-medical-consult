@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Globe, Languages, TrendingUp } from 'lucide-react';
+import { Globe, Languages, TrendingUp, Handshake } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Services: React.FC = () => {
@@ -11,6 +11,7 @@ const Services: React.FC = () => {
       case 0: return <Globe className="w-8 h-8 text-stone-400 mb-4" />;
       case 1: return <Languages className="w-8 h-8 text-stone-400 mb-4" />;
       case 2: return <TrendingUp className="w-8 h-8 text-stone-400 mb-4" />;
+      case 3: return <Handshake className="w-8 h-8 text-stone-400 mb-4" />;
       default: return <Globe className="w-8 h-8 text-stone-400 mb-4" />;
     }
   };
