@@ -53,18 +53,20 @@ const SERVICES_EN: ServiceItem[] = [
       "Hong Kong",
       "Taiwan",
       "Australia",
-      "Japan"
+      "Japan",
+      "Southeast Asia"
     ]
   },
   {
     title: "Translation Service",
     description: "Specialized medical and technical translation by experienced professionals.",
     // details: ["Main Languages: Chinese, English, Japanese", "Translator: Haley"],
-    details: ["Main Languages: Chinese, English, Japanese"],
-    pricing: [
-      { pair: "Mandarin-English / English-Mandarin", rate: "140 CNY / 1000 Words" },
-      { pair: "Mandarin-Japanese / Japanese-Mandarin", rate: "200 CNY / 1000 Words" }
-    ]
+    // details: ["Main Languages: Chinese, English, Japanese"],
+    details: ["Chinese <> other languages"]
+    // pricing: [
+    //   { pair: "Mandarin-English / English-Mandarin", rate: "140 CNY / 1000 Words" },
+    //   { pair: "Mandarin-Japanese / Japanese-Mandarin", rate: "200 CNY / 1000 Words" }
+    // ]
   },
   {
     title: "Investor Recommendation",
@@ -89,18 +91,20 @@ const SERVICES_CN: ServiceItem[] = [
       "香港",
       "台湾",
       "澳大利亚",
-      "日本"
+      "日本",
+      "东南亚"
     ]
   },
   {
     title: "翻译服务",
     description: "由经验丰富的专业人士提供的专业医疗和技术翻译。",
     // details: ["主要语言：中文、英文、日文", "译者：Haley"],
-    details: ["主要语言：中文、英文、日文"],
-    pricing: [
-      { pair: "中英互译", rate: "140元 / 1000字" },
-      { pair: "中日互译", rate: "200元 / 1000字" }
-    ]
+    // details: ["主要语言：中文、英文、日文"],
+    details: ["中文 <> 其他语言"]
+    // pricing: [
+    //   { pair: "中英互译", rate: "140元 / 1000字" },
+    //   { pair: "中日互译", rate: "200元 / 1000字" }
+    // ]
   },
   {
     title: "投融资咨询",
