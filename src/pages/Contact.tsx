@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, Phone, Linkedin, MessageSquare } from 'lucide-react';
+import { Mail, Linkedin, MessageSquare } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Contact: React.FC = () => {
