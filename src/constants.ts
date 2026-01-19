@@ -145,12 +145,12 @@ const TEAM_EN: TeamMember[] = [
     location: "Munich, Germany",
     bio: "Industry veteran since 2002. Past experience includes Cochlear, Bausch & Lomb, joimax, and Galderma."
   },
-  {
-    name: "Christina",
-    role: "Medical Device (Including IVD) & Drug Registration Manager",
-    location: "Hong Kong, Australia & Taiwan",
-    bio: "Specializing in medical device & drug registration for Hong Kong, Taiwan & Australia since 2004. Past experiences include Takeda, Boston Scientific, Elekta, Kodak, Lambda, Lumenis, ICU Medical, Centogene, etc."
-  },
+//   {
+//     name: "Christina",
+//     role: "Medical Device (Including IVD) & Drug Registration Manager",
+//     location: "Hong Kong, Australia & Taiwan",
+//     bio: "Specializing in medical device & drug registration for Hong Kong, Taiwan & Australia since 2004. Past experiences include Takeda, Boston Scientific, Elekta, Kodak, Lambda, Lumenis, ICU Medical, Centogene, etc."
+//   },
   {
     name: "Shawn",
     role: "Head of U.S. Subsidiary",
@@ -186,12 +186,12 @@ const TEAM_CN: TeamMember[] = [
     location: "德国慕尼黑",
     bio: "自2002年起的行业资深专家。曾就职于Cochlear、Bausch & Lomb、joimax和Galderma。"
   },
-  {
-    name: "Christina",
-    role: "医疗器械（包括体外诊断产品）和药品注册经理",
-    location: "香港、澳大利亚和台湾",
-    bio: "自2004年起专注于香港、台湾和澳大利亚的医疗器械及药品注册。曾服务的客户包括武田制药、波士顿科学、Elekta、柯达、Lambda、Lumenis、ICU Medical、Centogene等公司。"
-  },
+//   {
+//     name: "Christina",
+//     role: "医疗器械（包括体外诊断产品）和药品注册经理",
+//     location: "香港、澳大利亚和台湾",
+//     bio: "自2004年起专注于香港、台湾和澳大利亚的医疗器械及药品注册。曾服务的客户包括武田制药、波士顿科学、Elekta、柯达、Lambda、Lumenis、ICU Medical、Centogene等公司。"
+//   },
   {
     name: "Shawn",
     role: "美国子公司负责人",
