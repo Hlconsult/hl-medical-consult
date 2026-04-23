@@ -87,8 +87,6 @@ const SERVICES_CN: ServiceItem[] = [
       "FDA (美国)",
       "CE (欧盟)",
       "香港",
-      "台湾",
-      "澳大利亚",
       "日本",
       "东南亚"
     ]
