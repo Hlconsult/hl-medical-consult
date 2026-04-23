@@ -85,7 +85,7 @@ const SERVICES_CN: ServiceItem[] = [
     details: [
       "NMPA (中国)",
       "FDA (美国)",
-      "CE (欧洲)",
+      "CE (欧盟)",
       "香港",
       "台湾",
       "澳大利亚",
