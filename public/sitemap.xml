@@ -1,32 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
   <url>
-    <loc>https://hlmedicalconsult.cn/</loc>
+    <loc>https://hlmedicalconsult.cn/en</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hlmedicalconsult.cn/en" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://hlmedicalconsult.cn/cn" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hlmedicalconsult.cn/en" />
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://hlmedicalconsult.cn/services</loc>
+    <loc>https://hlmedicalconsult.cn/cn</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hlmedicalconsult.cn/en" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://hlmedicalconsult.cn/cn" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hlmedicalconsult.cn/en" />
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://hlmedicalconsult.cn/en/services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hlmedicalconsult.cn/en/services" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://hlmedicalconsult.cn/cn/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hlmedicalconsult.cn/en/services" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hlmedicalconsult.cn/articles</loc>
+    <loc>https://hlmedicalconsult.cn/cn/services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hlmedicalconsult.cn/en/services" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://hlmedicalconsult.cn/cn/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hlmedicalconsult.cn/en/services" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hlmedicalconsult.cn/articles/three-medical-device-review-guidelines</loc>
+    <loc>https://hlmedicalconsult.cn/en/articles</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hlmedicalconsult.cn/en/articles" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://hlmedicalconsult.cn/cn/articles" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hlmedicalconsult.cn/en/articles" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hlmedicalconsult.cn/cn/articles</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hlmedicalconsult.cn/en/articles" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://hlmedicalconsult.cn/cn/articles" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hlmedicalconsult.cn/en/articles" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hlmedicalconsult.cn/en/articles/three-medical-device-review-guidelines</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hlmedicalconsult.cn/en/articles/three-medical-device-review-guidelines" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://hlmedicalconsult.cn/cn/articles/three-medical-device-review-guidelines" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hlmedicalconsult.cn/en/articles/three-medical-device-review-guidelines" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hlmedicalconsult.cn/team</loc>
+    <loc>https://hlmedicalconsult.cn/cn/articles/three-medical-device-review-guidelines</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hlmedicalconsult.cn/en/articles/three-medical-device-review-guidelines" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://hlmedicalconsult.cn/cn/articles/three-medical-device-review-guidelines" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hlmedicalconsult.cn/en/articles/three-medical-device-review-guidelines" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hlmedicalconsult.cn/en/team</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hlmedicalconsult.cn/en/team" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://hlmedicalconsult.cn/cn/team" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hlmedicalconsult.cn/en/team" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hlmedicalconsult.cn/contact</loc>
+    <loc>https://hlmedicalconsult.cn/cn/team</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hlmedicalconsult.cn/en/team" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://hlmedicalconsult.cn/cn/team" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hlmedicalconsult.cn/en/team" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hlmedicalconsult.cn/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hlmedicalconsult.cn/en/contact" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://hlmedicalconsult.cn/cn/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hlmedicalconsult.cn/en/contact" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hlmedicalconsult.cn/cn/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hlmedicalconsult.cn/en/contact" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://hlmedicalconsult.cn/cn/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hlmedicalconsult.cn/en/contact" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

@@ -2,9 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, CalendarDays, Clock, ExternalLink } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { localizedPath } from '../utils/i18nRoutes';
 
 const Articles: React.FC = () => {
-  const { content } = useLanguage();
+  const { content, language } = useLanguage();
   const { articlesPage } = content;
 
   return (
@@ -48,7 +49,7 @@ const Articles: React.FC = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 sm:items-center">
                 <Link
-                  to={`/articles/${article.slug}`}
+                  to={localizedPath(language, `/articles/${article.slug}`)}
                   className="group inline-flex items-center text-sm uppercase tracking-widest text-stone-600 hover:text-beige-900 transition-colors"
                 >
                   {articlesPage.readArticle}

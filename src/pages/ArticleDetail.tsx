@@ -2,10 +2,12 @@ import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft, CalendarDays, Clock, ExternalLink } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import SEO from '../components/SEO';
+import { localizedPath } from '../utils/i18nRoutes';
 
 const ArticleDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
-  const { content } = useLanguage();
+  const { content, language } = useLanguage();
   const { articlesPage } = content;
   const article = articlesPage.articles.find((item) => item.slug === slug);
 
@@ -18,7 +20,7 @@ const ArticleDetail: React.FC = () => {
           </h2>
           <p className="text-stone-500 mb-8">{articlesPage.notFoundText}</p>
           <Link
-            to="/articles"
+            to={localizedPath(language, '/articles')}
             className="inline-flex items-center px-6 py-3 border border-beige-900 text-beige-900 text-sm uppercase tracking-widest hover:bg-beige-900 hover:text-beige-50 transition-all duration-300"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
@@ -31,9 +33,19 @@ const ArticleDetail: React.FC = () => {
 
   return (
     <div className="pt-20 min-h-screen bg-beige-50">
+          <SEO
+            title={article.seo.title}
+            description={article.seo.description}
+            canonicalUrl={article.seo.canonicalUrl}
+            alternateUrls={article.seo.alternateUrls}
+            keywords={article.seo.keywords}
+        ogTitle={article.seo.ogTitle}
+        ogDescription={article.seo.ogDescription}
+        ogType={article.seo.ogType}
+      />
       <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <Link
-          to="/articles"
+          to={localizedPath(language, '/articles')}
           className="inline-flex items-center text-sm uppercase tracking-widest text-stone-500 hover:text-beige-900 transition-colors mb-10"
         >
           <ArrowLeft className="mr-2 h-4 w-4" />

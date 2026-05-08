@@ -3,9 +3,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { localizedPath } from '../utils/i18nRoutes';
 
 const Home: React.FC = () => {
-  const { content } = useLanguage();
+  const { content, language } = useLanguage();
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -36,14 +37,14 @@ const Home: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row justify-center gap-6">
             <Link 
-              to="/services" 
+              to={localizedPath(language, '/services')} 
               className="group inline-flex items-center justify-center px-8 py-3 border border-beige-900 text-beige-900 text-sm uppercase tracking-widest hover:bg-beige-900 hover:text-beige-50 transition-all duration-300"
             >
               {content.home.ctaServices}
               <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link 
-              to="/contact" 
+              to={localizedPath(language, '/contact')} 
               className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-stone-600 text-sm uppercase tracking-widest hover:text-beige-900 transition-colors duration-300"
             >
               {content.home.ctaContact}

@@ -3,16 +3,18 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Globe } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { localizedPath, stripLanguagePrefix } from '../utils/i18nRoutes';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const { content, toggleLanguage, language } = useLanguage();
+  const currentPath = stripLanguagePrefix(location.pathname);
 
   const isActive = (path: string) => (
     path === '/articles'
-      ? location.pathname === path || location.pathname.startsWith('/articles/')
-      : location.pathname === path
+      ? currentPath === path || currentPath.startsWith('/articles/')
+      : currentPath === path
   );
   
   const linkClass = (path: string) => `
@@ -33,7 +35,7 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="font-serif text-2xl tracking-wider text-beige-900 font-bold">
+            <Link to={localizedPath(language, '/')} className="font-serif text-2xl tracking-wider text-beige-900 font-bold">
               {content.nav.brand}
             </Link>
           </div>
@@ -43,7 +45,7 @@ const Navbar: React.FC = () => {
             {navItems.map((item) => (
               <Link 
                 key={item.path} 
-                to={item.path} 
+                to={localizedPath(language, item.path)} 
                 className={linkClass(item.path)}
               >
                 {item.name}
@@ -86,7 +88,7 @@ const Navbar: React.FC = () => {
             {navItems.map((item) => (
               <Link
                 key={item.path}
-                to={item.path}
+                to={localizedPath(language, item.path)}
                 onClick={() => setIsOpen(false)}
                 className={`block px-3 py-2 text-base font-medium ${isActive(item.path) ? 'text-beige-900' : 'text-stone-600'}`}
               >

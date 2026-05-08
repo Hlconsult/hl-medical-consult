@@ -1,8 +1,9 @@
 
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, useContext, ReactNode, useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { TRANSLATIONS } from '../constants';
-
-type Language = 'en' | 'cn';
+import { Language } from '../types';
+import { languageFromPath, swapLanguageInPath } from '../utils/i18nRoutes';
 
 interface LanguageContextType {
   language: Language;
@@ -13,10 +14,17 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('en');
+  const location = useLocation();
+  const navigate = useNavigate();
+  const language = languageFromPath(location.pathname);
+
+  useEffect(() => {
+    document.documentElement.lang = language === 'cn' ? 'zh-CN' : 'en';
+  }, [language]);
 
   const toggleLanguage = () => {
-    setLanguage(prev => prev === 'en' ? 'cn' : 'en');
+    const nextLanguage = language === 'en' ? 'cn' : 'en';
+    navigate(swapLanguageInPath(location.pathname, nextLanguage));
   };
 
   const content = TRANSLATIONS[language];

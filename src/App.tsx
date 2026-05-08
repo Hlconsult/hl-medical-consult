@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom';
 import { LanguageProvider } from './contexts/LanguageContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -13,24 +13,26 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <LanguageProvider>
-      <Router>
+    <Router>
+      <LanguageProvider>
         <div className="flex flex-col min-h-screen">
           <Navbar />
           <main className="flex-grow">
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/articles" element={<Articles />} />
-              <Route path="/articles/:slug" element={<ArticleDetail />} />
-              <Route path="/team" element={<Team />} />
-              <Route path="/contact" element={<Contact />} />
+              <Route path="/" element={<Navigate to="/en" replace />} />
+              <Route path="/:lang" element={<Home />} />
+              <Route path="/:lang/services" element={<Services />} />
+              <Route path="/:lang/articles" element={<Articles />} />
+              <Route path="/:lang/articles/:slug" element={<ArticleDetail />} />
+              <Route path="/:lang/team" element={<Team />} />
+              <Route path="/:lang/contact" element={<Contact />} />
+              <Route path="*" element={<Navigate to="/en" replace />} />
             </Routes>
           </main>
           <Footer />
         </div>
-      </Router>
-    </LanguageProvider>
+      </LanguageProvider>
+    </Router>
   );
 }
 
