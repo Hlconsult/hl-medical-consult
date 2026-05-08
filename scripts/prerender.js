@@ -61,7 +61,10 @@ const prerender = async () => {
       const page = await browser.newPage();
       const url = `${baseUrl}${route}`;
 
-      await page.goto(url, { waitUntil: 'networkidle0' });
+      await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+      await page.waitForSelector('#root > *', { timeout: 10000 });
+      await page.waitForFunction(() => document.title && document.body.innerText.trim().length > 0, { timeout: 10000 });
+      await new Promise((resolve) => setTimeout(resolve, 300));
       await page.evaluate(() => document.documentElement.setAttribute('data-prerendered', 'true'));
 
       const html = await page.content();

@@ -62,9 +62,6 @@ const ArticleDetail: React.FC = () => {
             <Clock className="w-3.5 h-3.5 mr-1.5" />
             {article.readTime}
           </span>
-          <span>
-            {articlesPage.repostedFrom}: {article.sourceName}
-          </span>
         </div>
 
         <h1 className="font-serif text-3xl md:text-5xl text-beige-900 leading-tight mb-6">
@@ -101,6 +98,18 @@ const ArticleDetail: React.FC = () => {
               );
             }
 
+            if (block.type === 'image') {
+              return (
+                <figure key={index} className="py-4">
+                  <img
+                    src={block.text}
+                    alt={block.alt || article.title}
+                    className="w-full border border-beige-200 bg-white"
+                  />
+                </figure>
+              );
+            }
+
             return (
               <p key={index} className="text-stone-700 leading-8 text-base md:text-lg">
                 {block.text}
@@ -110,9 +119,10 @@ const ArticleDetail: React.FC = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-beige-200">
-          <p className="text-sm text-stone-500 leading-relaxed mb-6">
-            {article.sourceNote}
-          </p>
+          <p
+            className="text-sm text-stone-500 leading-relaxed mb-6"
+            dangerouslySetInnerHTML={{ __html: article.sourceNote }}
+          />
           <a
             href={article.originalUrl}
             target="_blank"

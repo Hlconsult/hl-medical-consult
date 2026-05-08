@@ -51,7 +51,8 @@ export interface ArticleItem {
   originalUrl: string;
   sourceNote: string;
   content: {
-    type: 'section' | 'heading' | 'paragraph' | 'bullet';
+    type: 'section' | 'heading' | 'paragraph' | 'bullet' | 'image';
     text: string;
+    alt?: string;
   }[];
 }

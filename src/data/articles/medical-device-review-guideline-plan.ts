@@ -1,0 +1,111 @@
+import { ArticleItem } from '../../types';
+
+export const medicalDeviceReviewGuidelinePlanEn: ArticleItem = {
+  slug: "medical-device-review-guideline-plan",
+  title: "China Releases Compilation Plan for Medical Device Registration Review Guidelines",
+  summary: "The new plan gives industry stakeholders an early view of upcoming review guideline priorities for Class II and Class III medical devices.",
+  seo: {
+    title: "Medical Device Registration Review Guideline Plan Released | HL Medical",
+    description: "China released a compilation plan for medical device registration review guidelines, covering Class II and Class III devices across implants, IVD, AI, rehabilitation, and other categories.",
+    keywords: "medical device registration guidelines, Class II medical devices, Class III medical devices, NMPA registration, CMDE review guidance",
+    canonicalUrl: "https://hlmedicalconsult.cn/en/articles/medical-device-review-guideline-plan",
+    alternateUrls: {
+      en: "https://hlmedicalconsult.cn/en/articles/medical-device-review-guideline-plan",
+      cn: "https://hlmedicalconsult.cn/cn/articles/medical-device-review-guideline-plan",
+      xDefault: "https://hlmedicalconsult.cn/en/articles/medical-device-review-guideline-plan"
+    },
+    ogTitle: "China Releases Compilation Plan for Medical Device Registration Review Guidelines",
+    ogDescription: "The plan provides an important roadmap for upcoming Class II and Class III medical device registration review guidance.",
+    ogType: "article"
+  },
+  date: "2026-05-08",
+  category: "Regulatory Update",
+  readTime: "4 min read",
+  sourceName: "HIGH-USABILITY",
+  originalUrl: "https://www.highusability.com",
+  sourceNote: "source: High Usability (our partner): www.high-usability.com",
+  content: [
+    { type: "section", text: "01" },
+    { type: "heading", text: "Core Purpose" },
+    { type: "paragraph", text: "The core purpose of this announcement is to give relevant organizations an early view of the direction of upcoming review work." },
+    { type: "bullet", text: "Help companies preparing Class II and Class III medical device registrations understand where review expectations are heading" },
+    { type: "bullet", text: "Give the industry time to prepare data and verification strategies" },
+    { type: "bullet", text: "Provide a clearer basis for future registration submissions" },
+    { type: "section", text: "02" },
+    { type: "heading", text: "Coverage" },
+    { type: "paragraph", text: "The plan broadly covers the following Class II and Class III medical device categories:" },
+    { type: "bullet", text: "Implantable and interventional devices, such as implantable neurostimulation electrodes, intracranial liquid embolization devices, and artificial blood vessels" },
+    { type: "bullet", text: "Treatment equipment, such as laser photodynamic therapy devices, picosecond Nd:YAG laser treatment devices, and hyperbaric oxygen chambers" },
+    { type: "bullet", text: "Orthopedic implants, such as patella claws, cranial clips or locks, and certain knee joint prostheses" },
+    { type: "bullet", text: "Dental products, such as gingival retraction materials, tooth whitening products, and dental abutments" },
+    { type: "bullet", text: "In vitro diagnostic reagents, such as Treponema pallidum antibody tests, hepatitis B surface antigen tests, and cervical cancer methylation tests" },
+    { type: "bullet", text: "Imaging and diagnostic equipment, such as infrared thermal imagers, transcranial Doppler ultrasound blood flow analyzers, and dual-energy X-ray bone densitometers" },
+    { type: "bullet", text: "Rehabilitation and physiotherapy devices, such as cognitive impairment rehabilitation equipment, visual rehabilitation equipment, and tinnitus rehabilitation equipment" },
+    { type: "bullet", text: "Surgical instruments, such as biopsy guns, puncture needles, and spinal surgery channel instruments" },
+    { type: "bullet", text: "Infusion and puncture products, such as insulin pump reservoirs, single-use arterial and venous cannulas, and pen injectors" },
+    { type: "bullet", text: "Disinfection and sterilization devices, such as boiling disinfectors, ozone disinfectors, and ethylene oxide sterilizers" },
+    { type: "bullet", text: "Medical aesthetics and dressing products, such as recombinant collagen products for plastic and aesthetic use, medical drapes, and surgical non-woven dressings" },
+    { type: "bullet", text: "Artificial intelligence medical devices, such as AI-assisted diagnostic devices, AI multi-classification decision support devices, and traditional Chinese medicine auxiliary diagnosis software" },
+    { type: "bullet", text: "Traditional Chinese medicine devices, such as moxibustion devices, warm-needle therapy equipment, and intradermal needles" },
+    { type: "bullet", text: "Nursing consumables, such as single-use rectal tubes, negative pressure drainage devices, and seawater nasal irrigation solutions" },
+    { type: "bullet", text: "Laboratory analysis instruments, such as flow cytometers, electrolyte analyzers, and urine analysis systems" },
+    { type: "section", text: "03" },
+    { type: "heading", text: "Conclusion" },
+    { type: "paragraph", text: "This notice is an important roadmap for the medical device industry over the next two years. Companies should closely monitor registration review guideline developments related to their own products and use the plan to better advance preparation work." }
+  ]
+};
+
+export const medicalDeviceReviewGuidelinePlanCn: ArticleItem = {
+  slug: "medical-device-review-guideline-plan",
+  title: "国家发布《医疗器械注册审查指导原则编制计划》通告",
+  summary: "该通告提前释放二、三类医疗器械注册审查指导原则编制方向，为企业准备数据和验证策略提供参考。",
+  seo: {
+    title: "国家发布《医疗器械注册审查指导原则编制计划》通告 | 赫莱医药",
+    description: "国家发布医疗器械注册审查指导原则编制计划，覆盖二、三类医疗器械，涉及植入介入、IVD、AI医疗器械、康复理疗等多个方向。",
+    keywords: "医疗器械注册审查指导原则, 医疗器械注册, 二类医疗器械, 三类医疗器械, NMPA注册",
+    canonicalUrl: "https://hlmedicalconsult.cn/cn/articles/medical-device-review-guideline-plan",
+    alternateUrls: {
+      en: "https://hlmedicalconsult.cn/en/articles/medical-device-review-guideline-plan",
+      cn: "https://hlmedicalconsult.cn/cn/articles/medical-device-review-guideline-plan",
+      xDefault: "https://hlmedicalconsult.cn/en/articles/medical-device-review-guideline-plan"
+    },
+    ogTitle: "国家发布《医疗器械注册审查指导原则编制计划》通告",
+    ogDescription: "该通告是医疗器械行业未来两年的重要路线图，企业应关注与自身产品相关的指导原则动向。",
+    ogType: "article"
+  },
+  date: "2026-05-08",
+  category: "法规动态",
+  readTime: "约4分钟",
+  sourceName: "HIGH-USABILITY",
+  originalUrl: "https://www.highusability.com",
+  sourceNote: "source: High Usability (our partner): www.high-usability.com",
+  content: [
+    { type: "section", text: "01" },
+    { type: "heading", text: "核心目的" },
+    { type: "paragraph", text: "这个公告的核心目的就在于提前预告相关单位：" },
+    { type: "bullet", text: "让准备注册二、三类医疗器械的企业提前知道审评要往哪走" },
+    { type: "bullet", text: "让行业有时间准备数据和验证策略" },
+    { type: "bullet", text: "方便后续注册申报更有依据" },
+    { type: "section", text: "02" },
+    { type: "heading", text: "覆盖范围" },
+    { type: "paragraph", text: "这次文件内容大致涉及以下二、三类医疗器械：" },
+    { type: "bullet", text: "植入 / 介入类，如植入式神经刺激电极、颅内液体栓塞器械、人工血管" },
+    { type: "bullet", text: "治疗设备类，如激光光动力治疗机、皮秒 Nd:YAG 激光治疗仪、高压氧舱" },
+    { type: "bullet", text: "骨科植入类，如髌骨爪、颅骨夹 / 锁、部分膝关节假体" },
+    { type: "bullet", text: "牙科类，如排龈材料、牙齿漂白产品、牙科基台" },
+    { type: "bullet", text: "体外诊断试剂类，如梅毒螺旋体抗体检测试剂、乙型肝炎病毒表面抗原检测试剂、宫颈癌甲基化检测试剂" },
+    { type: "bullet", text: "影像 / 诊断设备类，如红外热像仪、超声经颅多普勒血流分析仪、双能 X 射线骨密度仪" },
+    { type: "bullet", text: "康复理疗类，如认知障碍康复设备、视觉康复设备、耳鸣康复设备" },
+    { type: "bullet", text: "手术器械类，如活检枪、穿刺针、脊柱手术通道器械" },
+    { type: "bullet", text: "输注 / 穿刺类，如胰岛素泵用储液器、一次性使用动静脉插管、笔式注射器" },
+    { type: "bullet", text: "消毒灭菌类，如煮沸消毒器、臭氧消毒器、环氧乙烷灭菌器" },
+    { type: "bullet", text: "医美 / 敷料类，如整形美容用重组胶原蛋白产品、医用垫单、外科非织造布敷料" },
+    { type: "bullet", text: "人工智能医疗器械类，如人工智能辅助诊断器械、人工智能多分类辅助决策器械、中医辅助诊断软件" },
+    { type: "bullet", text: "中医器械类，如艾灸仪、温针治疗设备、皮内针" },
+    { type: "bullet", text: "护理耗材类，如一次性使用直肠管、负压引流器、海水鼻腔清洗液" },
+    { type: "bullet", text: "检验分析仪器类，如流式细胞仪、电解质分析仪、尿液分析系统" },
+    { type: "section", text: "03" },
+    { type: "heading", text: "结论" },
+    { type: "paragraph", text: "这份通告是医疗行业这两年的重要路线图，企业需要重点关注和自身有关的医疗器械注册审查指导原则动向，更好推进相关工作的展开。" }
+  ]
+};
