@@ -9,7 +9,11 @@ const Navbar: React.FC = () => {
   const location = useLocation();
   const { content, toggleLanguage, language } = useLanguage();
 
-  const isActive = (path: string) => location.pathname === path;
+  const isActive = (path: string) => (
+    path === '/articles'
+      ? location.pathname === path || location.pathname.startsWith('/articles/')
+      : location.pathname === path
+  );
   
   const linkClass = (path: string) => `
     text-sm font-medium uppercase tracking-widest hover:text-stone-500 transition-colors duration-300
@@ -19,6 +23,7 @@ const Navbar: React.FC = () => {
   const navItems = [
     { name: content.nav.home, path: '/' },
     { name: content.nav.services, path: '/services' },
+    { name: content.nav.articles, path: '/articles' },
     { name: content.nav.team, path: '/team' },
     { name: content.nav.contact, path: '/contact' },
   ];

@@ -25,3 +25,18 @@ export interface ContactInfo {
   phone: string;
   linkedin: string;
 }
+
+export interface ArticleItem {
+  slug: string;
+  title: string;
+  summary: string;
+  date: string;
+  category: string;
+  readTime: string;
+  sourceName: string;
+  originalUrl: string;
+  content: {
+    type: 'section' | 'heading' | 'paragraph' | 'bullet';
+    text: string;
+  }[];
+}

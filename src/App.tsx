@@ -1,11 +1,13 @@
 
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { LanguageProvider } from './contexts/LanguageContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Services from './pages/Services';
+import Articles from './pages/Articles';
+import ArticleDetail from './pages/ArticleDetail';
 import Team from './pages/Team';
 import Contact from './pages/Contact';
 
@@ -19,6 +21,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/services" element={<Services />} />
+              <Route path="/articles" element={<Articles />} />
+              <Route path="/articles/:slug" element={<ArticleDetail />} />
               <Route path="/team" element={<Team />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
