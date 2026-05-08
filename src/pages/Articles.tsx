@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, CalendarDays, Clock, ExternalLink } from 'lucide-react';
+import { ArrowRight, CalendarDays, Clock } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { localizedPath } from '../utils/i18nRoutes';
 
