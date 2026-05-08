@@ -33,12 +33,12 @@ const ArticleDetail: React.FC = () => {
 
   return (
     <div className="pt-20 min-h-screen bg-beige-50">
-          <SEO
-            title={article.seo.title}
-            description={article.seo.description}
-            canonicalUrl={article.seo.canonicalUrl}
-            alternateUrls={article.seo.alternateUrls}
-            keywords={article.seo.keywords}
+      <SEO
+        title={article.seo.title}
+        description={article.seo.description}
+        canonicalUrl={article.seo.canonicalUrl}
+        alternateUrls={article.seo.alternateUrls}
+        keywords={article.seo.keywords}
         ogTitle={article.seo.ogTitle}
         ogDescription={article.seo.ogDescription}
         ogType={article.seo.ogType}
@@ -110,6 +110,9 @@ const ArticleDetail: React.FC = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-beige-200">
+          <p className="text-sm text-stone-500 leading-relaxed mb-6">
+            {article.sourceNote}
+          </p>
           <a
             href={article.originalUrl}
             target="_blank"

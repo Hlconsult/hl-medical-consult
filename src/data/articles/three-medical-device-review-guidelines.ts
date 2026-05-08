@@ -23,6 +23,7 @@ export const threeMedicalDeviceReviewGuidelinesEn: ArticleItem = {
   readTime: "5 min read",
   sourceName: "HIGH-USABILITY",
   originalUrl: "https://www.highusability.com",
+  sourceNote: "Source: High Usability (our partner): www.high-usability.com",
   content: [
     { type: "section", text: "01" },
     { type: "heading", text: "Registration Review Focus Areas" },
@@ -95,6 +96,7 @@ export const threeMedicalDeviceReviewGuidelinesCn: ArticleItem = {
   readTime: "约5分钟",
   sourceName: "HIGH-USABILITY",
   originalUrl: "https://www.highusability.com",
+  sourceNote: "Source: High Usability (our partner): www.high-usability.com",
   content: [
     { type: "section", text: "01" },
     { type: "heading", text: "注册审查要点" },

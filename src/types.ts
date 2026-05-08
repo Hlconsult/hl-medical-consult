@@ -49,6 +49,7 @@ export interface ArticleItem {
   readTime: string;
   sourceName: string;
   originalUrl: string;
+  sourceNote: string;
   content: {
     type: 'section' | 'heading' | 'paragraph' | 'bullet';
     text: string;
