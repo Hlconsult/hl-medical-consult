@@ -35,9 +35,6 @@ const Articles: React.FC = () => {
                   <Clock className="w-3.5 h-3.5 mr-1.5" />
                   {article.readTime}
                 </span>
-                <span>
-                  {articlesPage.repostedFrom}: {article.sourceName}
-                </span>
               </div>
 
               <h3 className="font-serif text-2xl md:text-3xl text-beige-900 mb-4">
@@ -55,15 +52,6 @@ const Articles: React.FC = () => {
                   {articlesPage.readArticle}
                   <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
                 </Link>
-                <a
-                  href={article.originalUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm uppercase tracking-widest text-stone-500 hover:text-[#07c160] transition-colors"
-                >
-                  {articlesPage.originalArticle}
-                  <ExternalLink className="ml-2 h-4 w-4" />
-                </a>
               </div>
             </article>
           ))}
