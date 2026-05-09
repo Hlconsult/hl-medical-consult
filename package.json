@@ -22,7 +22,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build:netlify": "react-scripts build && node scripts/prerender.js",
+    "install:puppeteer-chrome": "puppeteer browsers install chrome",
+    "build:netlify": "react-scripts build && npm run install:puppeteer-chrome && node scripts/prerender.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
