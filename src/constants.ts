@@ -240,7 +240,7 @@ export const TRANSLATIONS: { en: Content; cn: Content } = {
     },
     articlesPage: {
       title: "Articles",
-      subtitle: "Practical notes on medical device registration, localization, and audit support.",
+      subtitle: "Practical notes on NMPA medical device registration, localization, and audit support.",
       backLabel: "Back to Articles",
       readArticle: "Read Article",
       originalArticle: "Visit Partner Website",
@@ -292,7 +292,7 @@ export const TRANSLATIONS: { en: Content; cn: Content } = {
     },
     articlesPage: {
       title: "文章",
-      subtitle: "关于医疗器械注册、本地化和审核支持的实务内容。",
+      subtitle: "关于NMPA医疗器械注册、本地化和审核支持的实务内容。",
       backLabel: "返回文章列表",
       readArticle: "阅读全文",
       originalArticle: "访问合作伙伴网站",
