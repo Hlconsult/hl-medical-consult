@@ -110,6 +110,40 @@ const ArticleDetail: React.FC = () => {
               );
             }
 
+            if (block.type === 'table') {
+              return (
+                <div key={index} className="py-4 overflow-x-auto">
+                  <table className="w-full min-w-[640px] border-collapse border border-beige-200 bg-white text-left text-sm text-stone-700">
+                    {block.caption && (
+                      <caption className="caption-top pb-3 text-left font-serif text-xl text-beige-900">
+                        {block.caption}
+                      </caption>
+                    )}
+                    <thead className="bg-beige-100 text-xs uppercase tracking-wider text-beige-900">
+                      <tr>
+                        {block.columns.map((column) => (
+                          <th key={column} scope="col" className="border border-beige-200 px-4 py-3 font-semibold">
+                            {column}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {block.rows.map((row, rowIndex) => (
+                        <tr key={rowIndex} className="even:bg-beige-50/50">
+                          {row.map((cell, cellIndex) => (
+                            <td key={`${rowIndex}-${cellIndex}`} className="border border-beige-200 px-4 py-3 align-top leading-6">
+                              {cell}
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              );
+            }
+
             return (
               <p key={index} className="text-stone-700 leading-8 text-base md:text-lg">
                 {block.text}

@@ -26,6 +26,19 @@ export interface ContactInfo {
   linkedin: string;
 }
 
+export type ArticleContentBlock =
+  | {
+      type: 'section' | 'heading' | 'paragraph' | 'bullet' | 'image';
+      text: string;
+      alt?: string;
+    }
+  | {
+      type: 'table';
+      caption?: string;
+      columns: string[];
+      rows: string[][];
+    };
+
 export interface ArticleItem {
   slug: string;
   title: string;
@@ -50,9 +63,5 @@ export interface ArticleItem {
   sourceName: string;
   originalUrl: string;
   sourceNote: string;
-  content: {
-    type: 'section' | 'heading' | 'paragraph' | 'bullet' | 'image';
-    text: string;
-    alt?: string;
-  }[];
+  content: ArticleContentBlock[];
 }
