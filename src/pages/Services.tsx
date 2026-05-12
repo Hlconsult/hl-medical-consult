@@ -2,9 +2,12 @@
 import React from 'react';
 import { Globe, Languages, TrendingUp, Handshake } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import SEO from '../components/SEO';
+import { breadcrumbSchema, pageSeo, professionalServiceSchema } from '../seo';
 
 const Services: React.FC = () => {
-  const { content } = useLanguage();
+  const { content, language } = useLanguage();
+  const seo = pageSeo(language, 'services', '/services');
   
   const getIcon = (index: number) => {
     switch (index) {
@@ -18,6 +21,16 @@ const Services: React.FC = () => {
 
   return (
     <div className="pt-20 min-h-screen bg-beige-50">
+      <SEO
+        {...seo}
+        jsonLd={[
+          professionalServiceSchema(language),
+          breadcrumbSchema([
+            { name: content.nav.home, path: `/${language}` },
+            { name: content.nav.services, path: `/${language}/services` }
+          ])
+        ]}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <div className="text-center mb-20">
           <h2 className="font-serif text-3xl md:text-4xl text-beige-900 mb-4">{content.servicesPage.title}</h2>

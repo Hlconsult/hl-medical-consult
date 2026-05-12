@@ -3,13 +3,24 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import SEO from '../components/SEO';
+import { organizationSchema, pageSeo, professionalServiceSchema, websiteSchema } from '../seo';
 import { localizedPath } from '../utils/i18nRoutes';
 
 const Home: React.FC = () => {
   const { content, language } = useLanguage();
+  const seo = pageSeo(language, 'home', '/');
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO
+        {...seo}
+        jsonLd={[
+          organizationSchema(language),
+          professionalServiceSchema(language),
+          websiteSchema(language)
+        ]}
+      />
       {/* Hero Section */}
       <div className="flex-1 relative flex items-center justify-center bg-beige-50 overflow-hidden">
         {/* Subtle Background Decoration */}

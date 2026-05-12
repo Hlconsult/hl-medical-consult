@@ -2,14 +2,27 @@
 import React from 'react';
 import { MapPin, Linkedin } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import SEO from '../components/SEO';
+import { breadcrumbSchema, organizationSchema, pageSeo } from '../seo';
 
 const Team: React.FC = () => {
-  const { content } = useLanguage();
+  const { content, language } = useLanguage();
+  const seo = pageSeo(language, 'team', '/team');
   const founder = content.teamPage.members.find(m => m.isFounder);
   const otherMembers = content.teamPage.members.filter(m => !m.isFounder);
 
   return (
     <div className="pt-20 min-h-screen bg-beige-50">
+      <SEO
+        {...seo}
+        jsonLd={[
+          organizationSchema(language),
+          breadcrumbSchema([
+            { name: content.nav.home, path: `/${language}` },
+            { name: content.nav.team, path: `/${language}/team` }
+          ])
+        ]}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         
         {/* Header */}

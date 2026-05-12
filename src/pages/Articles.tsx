@@ -2,14 +2,26 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, CalendarDays, Clock } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import SEO from '../components/SEO';
+import { breadcrumbSchema, pageSeo } from '../seo';
 import { localizedPath } from '../utils/i18nRoutes';
 
 const Articles: React.FC = () => {
   const { content, language } = useLanguage();
   const { articlesPage } = content;
+  const seo = pageSeo(language, 'articles', '/articles');
 
   return (
     <div className="pt-20 min-h-screen bg-beige-50">
+      <SEO
+        {...seo}
+        jsonLd={[
+          breadcrumbSchema([
+            { name: content.nav.home, path: `/${language}` },
+            { name: content.nav.articles, path: `/${language}/articles` }
+          ])
+        ]}
+      />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <div className="text-center mb-16">
           <h2 className="font-serif text-3xl md:text-4xl text-beige-900 mb-4">{articlesPage.title}</h2>
