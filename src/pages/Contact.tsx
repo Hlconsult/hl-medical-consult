@@ -2,13 +2,26 @@
 import React from 'react';
 import { Mail, Linkedin, MessageSquare } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import SEO from '../components/SEO';
+import { breadcrumbSchema, pageSeo, professionalServiceSchema } from '../seo';
 
 const Contact: React.FC = () => {
-  const { content } = useLanguage();
+  const { content, language } = useLanguage();
   const { info } = content.contactPage;
+  const seo = pageSeo(language, 'contact', '/contact');
 
   return (
     <div className="pt-20 min-h-screen bg-beige-50 flex items-center justify-center">
+      <SEO
+        {...seo}
+        jsonLd={[
+          professionalServiceSchema(language),
+          breadcrumbSchema([
+            { name: content.nav.home, path: `/${language}` },
+            { name: content.nav.contact, path: `/${language}/contact` }
+          ])
+        ]}
+      />
       <div className="max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-16">
         
         <div className="text-center mb-16">

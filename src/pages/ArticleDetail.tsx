@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft, CalendarDays, Clock, ExternalLink } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import SEO from '../components/SEO';
+import { articleSchema, breadcrumbSchema } from '../seo';
 import { localizedPath } from '../utils/i18nRoutes';
 
 const ArticleDetail: React.FC = () => {
@@ -42,6 +43,14 @@ const ArticleDetail: React.FC = () => {
         ogTitle={article.seo.ogTitle}
         ogDescription={article.seo.ogDescription}
         ogType={article.seo.ogType}
+        jsonLd={[
+          articleSchema(article, language),
+          breadcrumbSchema([
+            { name: content.nav.home, path: `/${language}` },
+            { name: articlesPage.title, path: `/${language}/articles` },
+            { name: article.title, path: `/${language}/articles/${article.slug}` }
+          ])
+        ]}
       />
       <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <Link
