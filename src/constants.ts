@@ -69,6 +69,16 @@ const SERVICES_EN: ServiceItem[] = [
     ]
   },
   {
+    title: "QMS Consulting",
+    description: "On-site and off-site consulting to help you get local QMS certificatio.",
+    details: ["NMPA", "ISO 13485", "MDSAP"]
+  },
+  {
+    title: "Usability Testing",
+    description: "Usability testing in China & the U.S., usability documents writing.",
+    details: []
+  },
+  {
     title: "Translation Service",
     description: "Registration document translation  On-site audit translation",
     // details: ["Main Languages: Chinese, English, Japanese", "Translator: Haley"],
@@ -105,6 +115,16 @@ const SERVICES_CN: ServiceItem[] = [
     ]
   },
   {
+    title: "QMS体系辅导",
+    description: "现场和远程咨询，帮助您获得本地QMS认证。",
+    details: ["NMPA", "ISO 13485", "MDSAP"]
+  },
+  {
+    title: "可用性测试",
+    description: "在中国和美国进行可用性测试，撰写可用性文件。",
+    details: []
+  },
+  {
     title: "翻译服务",
     description: "注册资料翻译 现场审核口译",
     // details: ["主要语言：中文、英文、日文", "译者：Haley"],
@@ -138,7 +158,7 @@ const TEAM_EN: TeamMember[] = [
   },
   {
     name: "Jun",
-    role: "NMPA Medical Device Registration Manager",
+    role: "NMPA Medical Device Registration & QMS Manager",
     location: "Beijing, China",
     bio: "Expert in NMPA registration since 2008. Past experience includes GE, Edwards Lifesciences, ZEISS, and ZOLL Medical."
   },
@@ -150,7 +170,7 @@ const TEAM_EN: TeamMember[] = [
   },
   {
     name: "Cindy",
-    role: "Senior Registration Manager (NMPA, CE & FDA)",
+    role: "Global Registration & QMS Manager (NMPA, CE & FDA)",
     location: "Munich, Germany",
     bio: "Industry veteran since 2002. Past experience includes Cochlear, Bausch & Lomb, joimax, and Galderma."
   },
@@ -179,7 +199,7 @@ const TEAM_CN: TeamMember[] = [
   },
   {
     name: "Jun",
-    role: "NMPA医疗器械注册经理",
+    role: "NMPA 医疗器械注册与质量管理体系经理",
     location: "中国北京",
     bio: "自2008年起专注于NMPA注册。曾就职于GE、Edwards Lifesciences、ZEISS和ZOLL Medical。"
   },
@@ -191,7 +211,7 @@ const TEAM_CN: TeamMember[] = [
   },
   {
     name: "Cindy",
-    role: "高级注册经理 (NMPA, CE & FDA)",
+    role: "全球注册与质量管理体系经理（NMPA、CE 与 FDA）",
     location: "德国慕尼黑",
     bio: "自2002年起的行业资深专家。曾就职于Cochlear、Bausch & Lomb、joimax和Galderma。"
   },
