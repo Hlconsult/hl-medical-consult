@@ -12,9 +12,9 @@ const Services: React.FC = () => {
   const getIcon = (index: number) => {
     switch (index) {
       case 0: return <Globe className="w-8 h-8 text-stone-400 mb-4" />;
-      case 1: return <Languages className="w-8 h-8 text-stone-400 mb-4" />;
-      case 2: return <TrendingUp className="w-8 h-8 text-stone-400 mb-4" />;
-      case 3: return <Handshake className="w-8 h-8 text-stone-400 mb-4" />;
+      case 3: return <Languages className="w-8 h-8 text-stone-400 mb-4" />;
+      case 4: return <TrendingUp className="w-8 h-8 text-stone-400 mb-4" />;
+      case 5: return <Handshake className="w-8 h-8 text-stone-400 mb-4" />;
       default: return <Globe className="w-8 h-8 text-stone-400 mb-4" />;
     }
   };
