@@ -152,7 +152,7 @@ const TEAM_EN: TeamMember[] = [
     name: "Haley Li",
     role: "Founder",
     location: "Guangzhou, China",
-    bio: "Medical device CRO & Notified Body sales & Translator (Mandarin, English & Japanese).",
+    bio: "Former Medical device CRO & Notified Body sales & Translator (Mandarin, English & Japanese).",
     isFounder: true,
     linkedin: "https://www.linkedin.com/in/hui-l-a9bb25104/"
   },
@@ -193,7 +193,7 @@ const TEAM_CN: TeamMember[] = [
     name: "Haley Li",
     role: "创始人",
     location: "中国广州",
-    bio: "医疗器械CRO和公告机构销售及翻译（中英日）。",
+    bio: "前医疗器械CRO和公告机构销售及翻译（中英日）。",
     isFounder: true,
     linkedin: "https://www.linkedin.com/in/hui-l-a9bb25104/"
   },
