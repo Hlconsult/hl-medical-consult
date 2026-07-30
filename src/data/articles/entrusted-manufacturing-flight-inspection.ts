@@ -23,7 +23,7 @@ export const entrustedManufacturingFlightInspectionEn: ArticleItem = {
   readTime: "4 min read",
   sourceName: "HIGH-USABILITY",
   originalUrl: "https://www.highusability.com",
-  sourceNote: "source: High Usability (our partner): www.high-usability.com",
+  sourceNote: "source: High Usability: www.high-usability.com",
   content: [
     { type: "section", text: "01" },
     { type: "heading", text: "Quality System in Name Only" },
@@ -69,7 +69,7 @@ export const entrustedManufacturingFlightInspectionCn: ArticleItem = {
   readTime: "约4分钟",
   sourceName: "HIGH-USABILITY",
   originalUrl: "https://www.highusability.com",
-  sourceNote: "source: High Usability (our partner): www.high-usability.com",
+  sourceNote: "source: High Usability: www.high-usability.com",
   content: [
     { type: "section", text: "01" },
     { type: "heading", text: "体系形同虚设" },

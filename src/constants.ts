@@ -29,7 +29,6 @@ interface Content {
     subtitle: string;
     backLabel: string;
     readArticle: string;
-    originalArticle: string;
     repostedFrom: string;
     notFoundTitle: string;
     notFoundText: string;
@@ -263,7 +262,6 @@ export const TRANSLATIONS: { en: Content; cn: Content } = {
       subtitle: "Practical notes on NMPA medical device registration, localization, and audit support.",
       backLabel: "Back to Articles",
       readArticle: "Read Article",
-      originalArticle: "Visit Partner Website",
       repostedFrom: "Reposted from",
       notFoundTitle: "Article not found",
       notFoundText: "The article you are looking for may have been moved or removed.",
@@ -315,7 +313,6 @@ export const TRANSLATIONS: { en: Content; cn: Content } = {
       subtitle: "关于NMPA医疗器械注册、本地化和审核支持的实务内容。",
       backLabel: "返回文章列表",
       readArticle: "阅读全文",
-      originalArticle: "访问合作伙伴网站",
       repostedFrom: "转载来源",
       notFoundTitle: "文章未找到",
       notFoundText: "您访问的文章可能已移动或删除。",

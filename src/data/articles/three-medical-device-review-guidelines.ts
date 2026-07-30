@@ -23,7 +23,7 @@ export const threeMedicalDeviceReviewGuidelinesEn: ArticleItem = {
   readTime: "5 min read",
   sourceName: "HIGH-USABILITY",
   originalUrl: "https://www.highusability.com",
-  sourceNote: "Source: High Usability (our partner): <a href='https://www.highusability.com' target='_blank' rel='noopener noreferrer'>www.high-usability.com</a>",
+  sourceNote: "source: High Usability: <a href='https://www.highusability.com' target='_blank' rel='noopener noreferrer'>www.high-usability.com</a>",
   content: [
     { type: "section", text: "01" },
     { type: "heading", text: "Registration Review Focus Areas" },
@@ -96,7 +96,7 @@ export const threeMedicalDeviceReviewGuidelinesCn: ArticleItem = {
   readTime: "约5分钟",
   sourceName: "HIGH-USABILITY",
   originalUrl: "https://www.highusability.com",
-  sourceNote: "Source: High Usability (our partner): <a href='https://www.highusability.com' target='_blank' rel='noopener noreferrer'>www.high-usability.com</a>",
+  sourceNote: "source: High Usability: <a href='https://www.highusability.com' target='_blank' rel='noopener noreferrer'>www.high-usability.com</a>",
   content: [
     { type: "section", text: "01" },
     { type: "heading", text: "注册审查要点" },

@@ -23,7 +23,7 @@ export const marchTerminatedRegistrationReviewEn: ArticleItem = {
   readTime: "2 min read",
   sourceName: "HIGH-USABILITY",
   originalUrl: "https://www.highusability.com",
-  sourceNote: "source: High Usability (our partner): www.high-usability.com",
+  sourceNote: "source: High Usability: www.high-usability.com",
   content: [
     { type: "section", text: "01" },
     { type: "heading", text: "March Registration Review Termination Summary" },
@@ -91,7 +91,7 @@ export const marchTerminatedRegistrationReviewCn: ArticleItem = {
   readTime: "约2分钟",
   sourceName: "HIGH-USABILITY",
   originalUrl: "https://www.highusability.com",
-  sourceNote: "source: High Usability (our partner): www.high-usability.com",
+  sourceNote: "source: High Usability: www.high-usability.com",
   content: [
     { type: "section", text: "01" },
     { type: "heading", text: "3月终止注册汇总" },

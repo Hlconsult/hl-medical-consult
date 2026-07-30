@@ -23,7 +23,7 @@ export const periodicSafetyUpdateReportGuideEn: ArticleItem = {
   readTime: "5 min read",
   sourceName: "HIGH-USABILITY",
   originalUrl: "https://www.highusability.com",
-  sourceNote: "source: High Usability (our partner): www.high-usability.com",
+  sourceNote: "source: High Usability: www.high-usability.com",
   content: [
     { type: "section", text: "01" },
     { type: "heading", text: "Reporting Requirements" },
@@ -76,7 +76,7 @@ export const periodicSafetyUpdateReportGuideCn: ArticleItem = {
   readTime: "约5分钟",
   sourceName: "HIGH-USABILITY",
   originalUrl: "https://www.highusability.com",
-  sourceNote: "source: High Usability (our partner): www.high-usability.com",
+  sourceNote: "source: High Usability: www.high-usability.com",
   content: [
     { type: "section", text: "01" },
     { type: "heading", text: "报告要求" },

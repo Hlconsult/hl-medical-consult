@@ -166,15 +166,6 @@ const ArticleDetail: React.FC = () => {
             className="text-sm text-stone-500 leading-relaxed mb-6"
             dangerouslySetInnerHTML={{ __html: article.sourceNote }}
           />
-          <a
-            href={article.originalUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center px-6 py-3 border border-beige-900 text-beige-900 text-sm uppercase tracking-widest hover:bg-beige-900 hover:text-beige-50 transition-all duration-300"
-          >
-            {articlesPage.originalArticle}
-            <ExternalLink className="ml-2 h-4 w-4" />
-          </a>
         </div>
       </article>
     </div>

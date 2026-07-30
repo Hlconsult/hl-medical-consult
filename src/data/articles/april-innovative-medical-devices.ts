@@ -23,7 +23,7 @@ export const aprilInnovativeMedicalDevicesEn: ArticleItem = {
   readTime: "2 min read",
   sourceName: "HIGH-USABILITY",
   originalUrl: "https://www.highusability.com",
-  sourceNote: "source: High Usability (our partner): www.high-usability.com",
+  sourceNote: "source: High Usability: www.high-usability.com",
   content: [
     { type: "section", text: "01" },
     { type: "heading", text: "April Innovation Channel Summary" },
@@ -76,7 +76,7 @@ export const aprilInnovativeMedicalDevicesCn: ArticleItem = {
   readTime: "约2分钟",
   sourceName: "HIGH-USABILITY",
   originalUrl: "https://www.highusability.com",
-  sourceNote: "source: High Usability (our partner): www.high-usability.com",
+  sourceNote: "source: High Usability: www.high-usability.com",
   content: [
     { type: "section", text: "01" },
     { type: "heading", text: "4月创新通道汇总" },
