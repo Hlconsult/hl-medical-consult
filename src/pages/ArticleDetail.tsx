@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { ArrowLeft, CalendarDays, Clock, ExternalLink } from 'lucide-react';
+import { ArrowLeft, CalendarDays, Clock } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import SEO from '../components/SEO';
 import { articleSchema, breadcrumbSchema } from '../seo';
